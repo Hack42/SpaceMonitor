@@ -1,0 +1,13 @@
+SpaceMonitor controller
+
+Dit project heeft als doel het beter bewaken van de ruimtes in de space. Momenteel wordt de temperatuur gemonitord, en wordt bewaakt of van een aantal ruimtes de ramen gesloten zijn als de SpaceState uit staat.
+
+Het project voorziet in een controller per ruimte, die serieel communiceert met een centraal systeem. Deze controller is gebaseerd op een ATMEGA88 of 168, en is voorzien van 
+* 12 I/O poorten (waarvan maximaal 4 als analoge ingang geschakeld kunnen worden)
+* 2 open-collector uitgangen, max. 35V 1A
+* een Dallas 18B20 voor temperatuurmeting
+* optioneel een MAX232 voor de seriele verbinding, wanneer TTL-nivo RS232 niet voldoet
+
+Ramen en deuren kunnen via microswitches verbonden worden met elk een I/O poort. De overige poorten kunnen gebruikt worden voor andere signaalgevers, of om apparatuur aan te sturen. De OC-uitgangen kunnen gebruikt worden om bijvoorbeeld een sirene of een flitslamp te schakelen
+
+https://hack42.nl/wiki/Space_monitoring
